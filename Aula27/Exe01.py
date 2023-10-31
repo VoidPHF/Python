@@ -1,23 +1,35 @@
 # Calculadora
-print("Bem-Vindo a calculadora em PYTHON")
-
-valor1=float(input("Digite um numero: "))
-while valor1=='':
-    input("Valor invalido, digite novamente: ")
-    continue
-if valor1 != '':
+while True:
+    print("Bem-Vindo a calculadora em PYTHON")
+    valor_1=float(input("Digite um numero: "))
+    valor_2=float(input("Digite outro numero: "))
     op1=input("Qual operação deseja fazer? +, -, /, *, **: ")
-    
-    valor2=float(input("Digite outro numero: "))
-    
+
+    numeros_validos=None    
+    try:
+        numeros_validos=True
+    except:
+        numeros_validos=None
+        
+    if numeros_validos is None:
+        print("Digite os numeros corretamente")
+        continue
+        
     if op1 == '+':
-        print(valor1 + valor2)
+        print(valor_1 + valor_2)
     if op1 == '-':
-        print(valor1 - valor2)
+        print(valor_1 - valor_2)
     if op1 == '/':
-        print(valor1 / valor2)
+        print(valor_1 / valor_2)
     if op1 == '*':
-        print(valor1 * valor2)
+        print(valor_1 * valor_2)
     if op1 == '**':
-        print(valor1**valor2)
+        print(valor_1**valor_2)
+        
+    sair = input('Deseja sair?: ').lower().startswith('s')
+    if sair is True:
+        break
+    continue
+#Codigos pra usar mais tarde "algo.lower()" deixa tudo em minusculo
+#algo.startswith('algum caracter') significa que se começa com tal caracter, realiza oq vc digitar abaixo disso
     
