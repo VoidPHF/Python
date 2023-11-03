@@ -1,8 +1,8 @@
 # Calculadora
 while True:
     print("Bem-Vindo a calculadora em PYTHON")
-    valor_1=float(input("Digite um numero: "))
-    valor_2=float(input("Digite outro numero: "))
+    valor_1=float(input("Digite um número: "))
+    valor_2=float(input("Digite outro número: "))
     op1=input("Qual operação deseja fazer? +, -, /, *, **: ")
 
     numeros_validos=None    

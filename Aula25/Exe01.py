@@ -28,11 +28,6 @@ if Tarde:
 if Noite:
     print("Boa Noite")
 
-Nome=input("Qual seu primeiro nome?: ")
-
-if Nome >= 
-
-
 
 """Maneira do Professor:
 
@@ -81,7 +76,6 @@ entrada = input('Digite a hora em números inteiros: ')
 #     print('Por favor, digite apenas números inteiros')
 
 -----------------
-
 nome = input('Digite seu nome: ')
 tamanho_nome = len(nome)
 
