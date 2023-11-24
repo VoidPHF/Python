@@ -1,10 +1,9 @@
-linhas = 2
-colunas = 2
+texto = 'Python'
 
-linha = 1
-while linha <= linhas:
-    coluna = 1
-    while coluna <= colunas:
-        print(linha, coluna)
-        coluna += 1
-    linha += 1
+novo_texto = ''
+for i in texto:
+    novo_texto += f'*{i}'
+    print(i)
+print(novo_texto + '*')
+
+#Esse codigo passa de letra em letra da string 
