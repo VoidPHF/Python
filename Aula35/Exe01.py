@@ -6,6 +6,3 @@ for i, vendedor in enumerate(vendedores):
         print(vendas[i])
 
 
-for c in range(1, 6): 
-        print("CONTANDO:" )
-        print (c)
